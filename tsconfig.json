@@ -1,14 +1,23 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.vitest.json"
-    }
-  ]
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    // "esModuleInterop": true,
+    // "jsx": "preserve",
+    // "skipLibCheck": true,
+    // "isolatedModules": true,
+    "moduleResolution": "node",
+    // "resolveJsonModule": true,
+    // "noUnusedLocals": true,
+    // "strictNullChecks": true,
+    // "allowJs": true,
+    // "forceConsistentCasingInFileNames": true,
+    "types": ["vite-plugin-pages/client", "vite-plugin-vue-layouts/client"]
+  }
+  // "vueCompilerOptions": {
+  //   "plugins": ["@vue-macros/volar/define-models", "@vue-macros/volar/define-slots"]
+  // },
+  // "exclude": ["dist", "node_modules", "cypress", "*.js"]
 }
